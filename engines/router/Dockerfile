@@ -31,7 +31,7 @@ RUN go build \
     -v ${PROJECT_ROOT}/cmd
 
 # Build the application image
-FROM alpine:latest
+FROM alpine:3.15.4
 ARG BIN_NAME=turing-router
 ENV BIN_NAME ${BIN_NAME}
 
