@@ -17,7 +17,7 @@ RUN go build \
     -v ${PROJECT_ROOT}/cmd
 
 # Clean image with turing-api binary and production build of turing-ui
-FROM alpine:3.12
+FROM alpine:3.16
 
 ARG API_BIN_NAME=turing-api
 ENV API_BIN_NAME ${API_BIN_NAME}
